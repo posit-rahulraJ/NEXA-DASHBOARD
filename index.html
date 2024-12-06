@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Admin Panel</h2>
+            <nav>
+                <a href="#" class="nav-item active">Dashboard</a>
+                <a href="#">Analytics</a>
+                <a href="#">Reports</a>
+                <a href="#">Settings</a>
+                <a href="#">Logout</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Topbar -->
+            <header class="topbar">
+                <h1>Dashboard Overview</h1>
+                <div class="topbar-icons">
+                    <button class="dark-mode-toggle">🌙</button>
+                    <span class="user-icon">👤</span>
+                </div>
+            </header>
+
+            <!-- Charts Section -->
+            <section class="charts">
+                <div class="chart-card">
+                    <h3>Sales Overview</h3>
+                    <canvas id="salesChart"></canvas>
+                </div>
+                <div class="chart-card">
+                    <h3>User Activity</h3>
+                    <canvas id="activityChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Grid Section -->
+            <section class="stats-grid">
+                <div class="stat-box">Revenue: $12,400</div>
+                <div class="stat-box">Users: 1,024</div>
+                <div class="stat-box">Conversion Rate: 2.5%</div>
+                <div class="stat-box">Growth: +15%</div>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
